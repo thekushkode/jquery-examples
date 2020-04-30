@@ -11,7 +11,19 @@
     HINT: lookup .val()
     */
     $(function () {
-      // write your code here
+      const $saveButton = $("#save-button");
+      const $clearButton = $("#clear-button");
+      const $uL = $("#log")
+      const $inputField = $("#text-field");
+      $clearButton.on("click", function() {
+        $inputField.val("");
+      
+      })
+      $saveButton.on("click", function () {
+        let text = $inputField.val();
+        let newLI = $("<li>").text(text)
+          $uL.append(newLI);
+      })
     });
     </script>
   </head>

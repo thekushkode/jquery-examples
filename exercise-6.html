@@ -11,7 +11,11 @@
     (Make it toggle back and forth between hidden and show)
     */
     $(function() {
-      // Write code here
+      const $section = $("#accordion");
+      const $pGraph = $("#section");
+      $section.click(function () {
+        $pGraph.toggle(1000);
+      });
     });
     </script>
 
